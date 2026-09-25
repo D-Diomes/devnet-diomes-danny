@@ -1,7 +1,7 @@
 """
 Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Student: Diomes, Danny D.
+Date: September 25, 2026
 
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
