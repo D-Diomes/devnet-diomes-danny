@@ -1,7 +1,7 @@
 # Module 1 — Git & GitHub
 
-**Student:** [your name]
-**Date:** [date]
+**Student:** Diomes, Danny D.
+**Date:** September 25, 2026
 
 ---
 
