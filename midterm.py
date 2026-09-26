@@ -3,9 +3,7 @@ Midterm Practical Exam — Movie Collection Manager
 Student: Diomes, Danny D.
 """
 
-global movies = [["Inception", "Christopher Nolan", "Watched"]]
-for movie in movies:
-        print(movie[0])
+movies = [["Inception", "Christopher Nolan", "Watched"]]
 
 def display_menu():
     print("=== Movie Collection Manager ===")
@@ -54,26 +52,22 @@ def remove_movie(movie_list):
 
 
 def main():
-    # create the main menu loop
-    # call the appropriate function based on the user's choice
-    pass
+    while True:
+    display_menu()
+    if display_menu(choice) == 1:
+        add_movie(movie_list)
+    elif display_menu(choice) == 2:
+        pass
+    elif display_menu(choice) == 3:
+        pass
+    elif display_menu(choice) == 4:
+        pass
+    elif display_menu(choice) == 5:
+        pass
+    elif display_menu(choice) == 6:
+        pass
+    else:
+        print("Invalid Choice")
 
 
 main()
-# while True:
-#     display_menu()
-#     if display_menu(choice) == 1:
-#         add_movie(movie_list)
-#     elif display_menu(choice) == 2:
-#         pass
-#     elif display_menu(choice) == 3:
-#         pass
-#     elif display_menu(choice) == 4:
-#         pass
-#     elif display_menu(choice) == 5:
-#         pass
-#     elif display_menu(choice) == 6:
-#         pass
-#     else:
-#         print("Invalid Choice")
-
