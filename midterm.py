@@ -5,6 +5,9 @@ Student: Diomes, Danny D.
 
 movies = [["Inception", "Christopher Nolan", "Watched"]]
 
+x = movies.index("Watched")
+print(x)
+
 def display_menu():
     print("=== Movie Collection Manager ===")
     print("1. Add a movie")
@@ -15,29 +18,30 @@ def display_menu():
     print("6. Exit")
     choice = int(input("Choose an option: "))
     return choice
-        
 
 def add_movie(movie_list):
-    print("Hi")
-    name = input("Movie name: ")
-    added_movies = [name]
+    title = input("Enter movie title: ")
+    director = input("Enter director: ")
+    status = input("Enter status: ")
+    added_movies = [[title, director, status]]
     movies.extend(added_movies)
-    print(movies)
-
-    return
-
+    print("")
+    print("Movie added successfully.")
+    return print("")
 def view_movies(movie_list):
-    # for movie in movies:
-    #     print(movie)
-    pass
-
+    print("")
+    print("=== All Movies ===")
+    for movie in movies:
+        print(movie)
+        print("")
 
 def count_watched_unwatched(movie_list):
-    # loop through the list
-    # count Watched vs Unwatched
-    # return both counts
-    pass
-
+    print("")
+    for movie in movies:
+        watched = movie.count("watched")
+        return print(f"Watched: {watched}")
+        unwatched = movie.count("unwatched")
+        return print(f"Unwatched: {unwatched}")
 
 def find_movie(movie_list):
     # ask for a movie title
@@ -50,7 +54,6 @@ def remove_movie(movie_list):
     remove = int (input ("Number: "))
     movies.pop(remove)
     print(movies)
-    pass
 
 
 
@@ -58,17 +61,17 @@ def main():
     while True:
         choice = display_menu()
         if choice == 1:
-            print(add_movie(movie_list))
+            add_movie(movies)
         elif choice == 2:
-            pass
+            view_movies(movies)
         elif choice == 3:
-            pass
+            count_watched_unwatched(movies)
         elif choice == 4:
-            pass
+            find_movie(movies)
         elif choice == 5:
-            pass
+            remove_movie(movies)
         elif choice == 6:
-            pass
+            break
         else:
             print("Invalid Choice")
 
