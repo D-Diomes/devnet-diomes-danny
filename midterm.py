@@ -5,9 +5,6 @@ Student: Diomes, Danny D.
 
 movies = [["Inception", "Christopher Nolan", "Watched"]]
 
-x = movies.index("Watched")
-print(x)
-
 def display_menu():
     print("=== Movie Collection Manager ===")
     print("1. Add a movie")
@@ -22,12 +19,17 @@ def display_menu():
 def add_movie(movie_list):
     title = input("Enter movie title: ")
     director = input("Enter director: ")
-    status = input("Enter status: ")
-    added_movies = [[title, director, status]]
-    movies.extend(added_movies)
-    print("")
-    print("Movie added successfully.")
-    return print("")
+    status = input("Enter status (Watched or Unwatched only | Case sensitive): ")
+    if status != "Watched" or "Unwatched":
+        print("")
+        print("Watche and Unwatched only")
+        print("")
+    else:
+        added_movies = [[title, director, status]]
+        movies.extend(added_movies)
+        print("")
+        print("Movie added successfully.")
+        return print("")
 def view_movies(movie_list):
     print("")
     print("=== All Movies ===")
