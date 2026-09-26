@@ -13,7 +13,8 @@ def display_menu():
     print("4. Find a movie")
     print("5. Remove a movie")
     print("6. Exit")
-    choice = int(input ("Choose an option: "))
+    choice = int(input("Choose an option: "))
+    return choice
         
 
 def add_movie(movie_list):
@@ -22,6 +23,8 @@ def add_movie(movie_list):
     added_movies = [name]
     movies.extend(added_movies)
     print(movies)
+
+    return
 
 def view_movies(movie_list):
     # for movie in movies:
@@ -44,8 +47,8 @@ def find_movie(movie_list):
     pass
 
 def remove_movie(movie_list):
-    choice = int (input ("Number: "))
-    movies.pop(choice)
+    remove = int (input ("Number: "))
+    movies.pop(remove)
     print(movies)
     pass
 
@@ -53,21 +56,21 @@ def remove_movie(movie_list):
 
 def main():
     while True:
-    display_menu()
-    if display_menu(choice) == 1:
-        add_movie(movie_list)
-    elif display_menu(choice) == 2:
-        pass
-    elif display_menu(choice) == 3:
-        pass
-    elif display_menu(choice) == 4:
-        pass
-    elif display_menu(choice) == 5:
-        pass
-    elif display_menu(choice) == 6:
-        pass
-    else:
-        print("Invalid Choice")
+        choice = display_menu()
+        if choice == 1:
+            print(add_movie(movie_list))
+        elif choice == 2:
+            pass
+        elif choice == 3:
+            pass
+        elif choice == 4:
+            pass
+        elif choice == 5:
+            pass
+        elif choice == 6:
+            pass
+        else:
+            print("Invalid Choice")
 
 
 main()
