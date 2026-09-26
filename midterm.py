@@ -3,9 +3,9 @@ Midterm Practical Exam — Movie Collection Manager
 Student: Diomes, Danny D.
 """
 
-movies = [["Inception", "Christopher Nolan", "Watched"]]
-added_movies = []
-print(movies)
+global movies = [["Inception", "Christopher Nolan", "Watched"]]
+for movie in movies:
+        print(movie[0])
 
 def display_menu():
     print("=== Movie Collection Manager ===")
@@ -15,20 +15,19 @@ def display_menu():
     print("4. Find a movie")
     print("5. Remove a movie")
     print("6. Exit")
-    print("Choose an option:")
-    pass
-
+    choice = int(input ("Choose an option: "))
+        
 
 def add_movie(movie_list):
-    # ask for title, director, and status
-    # build the movie string
-    # add it to the list
-    pass
-
+    print("Hi")
+    name = input("Movie name: ")
+    added_movies = [name]
+    movies.extend(added_movies)
+    print(movies)
 
 def view_movies(movie_list):
-    # loop through and print every movie
-    # handle empty list
+    # for movie in movies:
+    #     print(movie)
     pass
 
 
@@ -47,7 +46,9 @@ def find_movie(movie_list):
     pass
 
 def remove_movie(movie_list):
-    # your code here
+    choice = int (input ("Number: "))
+    movies.pop(choice)
+    print(movies)
     pass
 
 
@@ -59,3 +60,20 @@ def main():
 
 
 main()
+# while True:
+#     display_menu()
+#     if display_menu(choice) == 1:
+#         add_movie(movie_list)
+#     elif display_menu(choice) == 2:
+#         pass
+#     elif display_menu(choice) == 3:
+#         pass
+#     elif display_menu(choice) == 4:
+#         pass
+#     elif display_menu(choice) == 5:
+#         pass
+#     elif display_menu(choice) == 6:
+#         pass
+#     else:
+#         print("Invalid Choice")
+
