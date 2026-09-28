@@ -14,12 +14,12 @@ sort the files? e.g. by extension, by name, by date, etc.]
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory:
-(add more as needed)
-
+- os module: A module that it allows to interact wil the file or folder inside our computer.
+- shutil module: It can perform copy or move files or folders.
+- file path: Location of the file.
+- folder path: location of the folder.
+- directory: Alternative name for folder
+- file extension: The end part of the file, example if you have text file, then the extion of it will be ".txt".
 
 ============================================
 YOUR SCRIPT
