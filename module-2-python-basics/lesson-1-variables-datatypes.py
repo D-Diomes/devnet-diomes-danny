@@ -6,6 +6,7 @@ Date: September 25, 2026
 ============================================
 WHAT IS THIS TOPIC? (explain it like you're
 teaching a friend who's never coded before)
+============================================
 The different data types, and variables,
 Data Types
 They are like ppt (powerpoint), docx (document), xls (excel)
@@ -17,11 +18,7 @@ float for number with decimal
 Variables
 They are the input we decided to give to the data types, example
 number = 10
-the "number" will be the variable and the 10 will be the value we signed to it and its a int data type since its a whole number
-============================================
-[write your own explanation here]
-
-
+the "number" will be the variable and the 10 will be the value we signed to it and its a int data type since its a whole number.
 ============================================
 KEY VOCABULARY
 ============================================
