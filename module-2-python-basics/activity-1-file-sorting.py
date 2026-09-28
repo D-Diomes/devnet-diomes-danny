@@ -6,10 +6,6 @@ Date: September 25, 2026
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
-
 
 ============================================
 KEY VOCABULARY
