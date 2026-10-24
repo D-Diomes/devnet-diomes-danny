@@ -3,7 +3,7 @@ import random
 
 def main ():
     number = random.randrange(1, 6)
-    print(f"The number is : {number}")
+    # print(f"The number is : {number}")
     try: 
         if number == 1:
             pokedex = requests.get('https://pokeapi.co/api/v2/pokemon/1', timeout=10)
