@@ -3,7 +3,7 @@ import random
 
 def main ():
     number = random.randrange(1, 6)
-    # print(f"The number is : {number}")
+    print(f"The number is : {number}")
     try: 
         if number == 1:
             pokedex = requests.get('https://pokeapi.co/api/v2/pokemon/1', timeout=10)
@@ -83,8 +83,7 @@ def main ():
         if guess not in valid_choices:
             print("Invalid Pokémon name! Please choose from the provided list.")
             continue
-
-        if guess == name:
+        elif guess == name:
             print("Correct guess!")
             return
         else:
